@@ -1,0 +1,74 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+    list-style-type:none;
+     border: none;
+     text-decoration: none;
+
+}
+
+*:focus {
+    outline: none;
+}
+
+ul,h1,h2,h3,h4 {
+    margin: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+
+}
+
+
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+$text_color:#D4C17F;
+$main_dark:#242B33;
+
+
+::-webkit-scrollbar {
+  width: 10px;
+   background: #fff;
+}
+
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $main_dark; 
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $text_color; 
+}
+
+body {
+    background:$main_dark;
+}

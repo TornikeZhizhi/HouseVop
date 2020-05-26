@@ -1,0 +1,372 @@
+
+
+.common_width {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+#main_wrapper {
+	
+	background-image:linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%) ,url("../images/owen-lystrup-boLgiM0qwkg-unsplash.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	.scroll_down {
+
+		margin-top: 5%;
+		animation: scrollAnime 3s linear infinite;
+	}
+
+	.home_contact_info_fluids {
+
+		display: flex;
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		align-items: center;
+		&>div {
+
+			&:first-child {
+				margin-right:100px;
+			}
+			img {
+					padding-right: 10px;
+					height: 21px;
+					object-fit: contain;
+				}
+
+			a,span {
+				color: #fff;
+				font-family: $raleway;
+				font-size: 14px;
+
+
+			}
+		}
+	}
+
+	.slider_fluid {
+
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		.home_info_slider {
+			max-width: 540px;
+			margin: 0 auto;
+			
+
+			&>div {
+				text-align: center;
+
+
+				h2 {
+
+					a {
+						color: $text_color;
+						font-size: 48px;
+						font-family: $playfair;
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+@keyframes scrollAnime {
+
+	0% {
+		transform: translateY(0);
+	}
+
+
+	50% {
+		transform: translateY(6px);
+	}
+
+	100% {
+		transform: translateY(0);
+
+	}
+}
+
+#about {
+
+	background-color: $main_dark;
+}
+.info_tabs_fluid {
+
+
+
+
+	.info_tabs_box {
+
+		display: flex;
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 70px 10px;
+
+		.info_tab {
+			max-width: 25%;
+			flex:0 0 25%;
+			padding: 0 10px;
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				text-align: center;
+
+				img {
+					width: 80px;
+					object-fit: contain;
+				}
+
+				h3 {
+					font-size: 16px;
+					color: #fff;
+					margin-top: 20px;
+					font-family: $roboto;
+				}
+			}
+		}
+	}
+}
+
+
+.rooms_fluid {
+
+	.rooms_main_wrapper {
+
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+	.rooms_box_wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+		.rooms_box {
+
+			    max-width: 50%;
+			    flex: 0 0 50%;
+			    padding: 0 15px;
+			    margin-bottom: 15px;
+
+			a {
+				display: block;
+				width: 100%;
+				height: 320px;
+				position: relative;
+
+				&:after{
+					width:100%;
+					height: 100%;
+					background-image: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 1;
+					content: "";	
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+
+				span {
+					position: absolute;
+					left: 10px;
+					bottom: 10px;
+					z-index: 10;
+					color: #fff;
+					font-style: $raleway;
+					font-size: 22px;
+				}
+			}
+		}
+	}
+}
+
+.common_title {
+
+	font-family: $playfair;
+	color: $text_color;
+	font-size: 36px;
+	margin-bottom: 50px;
+	padding-top: 30px;
+	padding-left: 15px;
+
+}
+
+#form_section {
+
+	padding: 50px 0;
+	background:linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../images/andre-sanano-gQ06DrUzNIk-unsplash.jpg"), #C4C4C4; 
+
+	.form_fluid {
+
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+}
+
+.form_box {
+	display: flex;
+	justify-content: space-between;
+	&>div {
+
+
+		flex: 0 0 50%;
+		max-width: 50%;
+
+		&.form_left_info {
+			
+		 padding: 0 15px;
+				
+			p {
+				color: #fff;
+				font-family: $raleway;
+				font-size: 16px;
+			}
+		}
+
+		
+	}
+}
+
+.form_inputs {
+
+			form {
+
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+
+
+				&>div {
+					flex: 0 0 50%;
+					max-width: 50%;
+					margin-bottom: 20px;
+					padding: 0 15px;
+
+					
+
+					p {
+					color: #fff;
+					font-family: $raleway;
+					font-size: 13px;
+				}
+
+			
+				button {
+					border: none;
+					color: #fff;
+					font-size: 16px;
+					background-color: $text_color;
+					outline: none;
+					padding: 10px 0;
+  					  width: 100%;
+  					  height: 50px;
+  					  cursor: pointer;
+				}
+
+					input {
+
+						background-color: rgba(255,255,255,.2);
+						text-align: center;
+						color: #fff;
+						font-family: $raleway;
+						font-size: 14px;
+						width: 100%;
+   						 padding: 10px 5px;
+   						 height: 50px;
+						&::placeholder{
+							color: #BEBEBE;
+						font-family: $raleway;
+						font-size: 14px;
+						}
+					}
+				}
+
+					&.question_form {
+					flex-wrap: unset;
+
+					&>div {
+						flex: 0 0 25%;
+					max-width: 25%;
+					}
+				}
+
+
+			}
+		}
+#video_section {
+	padding: 50px 0;
+}
+
+.home_video_box {
+	 max-width: 650px;
+	 margin: 0 auto;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+
+
+	.video_decor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+    	display: none;
+    }
+}
+
+ video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+}
+
+#question {
+	padding:30px 0 60px;
+}
+
+#map_section {
+	padding: 30px 0;
+	.map_fluid {
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+
+	.map_box {
+
+		    padding: 0 15px;
+			width: 100%;
+		iframe {
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+		}
+	}
+}

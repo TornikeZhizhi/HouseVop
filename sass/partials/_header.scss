@@ -1,0 +1,59 @@
+
+#header {
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+
+	.header_fluid {
+		display: flex;
+	    max-width: 1080px;
+	    margin: 0 auto;
+	    justify-content: space-between;
+	    align-items: center;
+	    padding: 10px 10px 10px 10px;
+
+	    .logo {
+
+	    	a {
+	    		display: block;
+
+	    			img {
+	    				width: 135px;
+	    				object-fit: contain;
+	    			}
+
+	    	}
+	    }
+
+	    nav {
+
+	    	ul {
+	    		display: flex;
+
+	    		li {
+
+
+	    			&:not(:last-child){
+	    				margin-right: 50px;
+	    			}
+
+	    			a {
+	    				color: #fff;
+	    				font-size: 14px;
+	    				font-family: $raleway;
+	    				transition: all .3s;
+
+
+	    				&:hover{
+	    					color:$text_color;
+	    				}
+	    			}
+	    		}
+	    	}
+	    }
+	}
+}
+
