@@ -5,7 +5,9 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 1000;
 	height: auto;
+	background-color: $main_dark;
 
 	.header_fluid {
 		display: flex;
