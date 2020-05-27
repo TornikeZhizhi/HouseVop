@@ -13,6 +13,12 @@ $('.home_info_slider').slick({
 
 });
 
+$(".resp_hum").click(function(){
+
+
+	$("#header .header_fluid nav ul").slideToggle()
+})
+
 
 var vids = $(".home_video_box video"); 
 	$.each(vids, function(){

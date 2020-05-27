@@ -1,5 +1,11 @@
 
+.resp_hum {
+	display: none;
 
+	img {
+		width: 25px;
+	}
+}
 .common_width {
 	max-width: 1100px;
 	margin: 0 auto;
@@ -29,7 +35,7 @@
 		transform: translateX(-50%);
 		align-items: center;
 		&>div {
-
+			display: flex;
 			&:first-child {
 				margin-right:100px;
 			}
@@ -43,6 +49,7 @@
 				color: #fff;
 				font-family: $raleway;
 				font-size: 14px;
+				white-space: nowrap;
 
 
 			}
@@ -105,13 +112,14 @@
 .info_tabs_fluid {
 
 	position: relative;
+	overflow:hidden;
 
 	.section_number {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		right: 8%;
-		z-index: 1;
+		    position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    right: -25%;
+		    z-index: 1;
 		span {
 			font-size: 400px;
 			font-family: $playfair;

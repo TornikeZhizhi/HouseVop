@@ -135,6 +135,11 @@ footer {
     footer .footer_social a img {
       height: 17px; }
 
+.resp_hum {
+  display: none; }
+  .resp_hum img {
+    width: 25px; }
+
 .common_width {
   max-width: 1100px;
   margin: 0 auto; }
@@ -156,16 +161,19 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     align-items: center; }
-    #main_wrapper .home_contact_info_fluids > div:first-child {
-      margin-right: 100px; }
-    #main_wrapper .home_contact_info_fluids > div img {
-      padding-right: 10px;
-      height: 21px;
-      object-fit: contain; }
-    #main_wrapper .home_contact_info_fluids > div a, #main_wrapper .home_contact_info_fluids > div span {
-      color: #fff;
-      font-family: "Conv_Raleway-Regular";
-      font-size: 14px; }
+    #main_wrapper .home_contact_info_fluids > div {
+      display: flex; }
+      #main_wrapper .home_contact_info_fluids > div:first-child {
+        margin-right: 100px; }
+      #main_wrapper .home_contact_info_fluids > div img {
+        padding-right: 10px;
+        height: 21px;
+        object-fit: contain; }
+      #main_wrapper .home_contact_info_fluids > div a, #main_wrapper .home_contact_info_fluids > div span {
+        color: #fff;
+        font-family: "Conv_Raleway-Regular";
+        font-size: 14px;
+        white-space: nowrap; }
   #main_wrapper .slider_fluid {
     height: 100%;
     display: flex;
@@ -194,12 +202,13 @@ footer {
   padding-top: 30px; }
 
 .info_tabs_fluid {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .info_tabs_fluid .section_number {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 8%;
+    right: -25%;
     z-index: 1; }
     .info_tabs_fluid .section_number span {
       font-size: 400px;
@@ -440,5 +449,119 @@ footer {
       width: 100%;
       height: 300px;
       object-fit: cover; }
+
+@media only screen and (max-width: 992px) {
+  .section_number {
+    display: none !important; }
+
+  #header .header_fluid nav ul {
+    flex-direction: column; }
+
+  #header .header_fluid {
+    align-items: flex-start; }
+
+  #main_wrapper .home_contact_info_fluids > div:first-child {
+    margin-right: 39px; }
+
+  .rooms_fluid .rooms_box_wrapper .rooms_box a {
+    height: 235px; }
+
+  #main_wrapper .slider_fluid .home_info_slider > div h2 a {
+    font-size: 30px; }
+
+  #form_section {
+    padding: 0px 0; }
+
+  #header .header_fluid .logo a img {
+    width: 90px; }
+
+  .resp_hum {
+    display: block;
+    text-align: right; }
+
+  #header .header_fluid nav ul {
+    display: none;
+    text-align: center; }
+
+  #header .header_fluid nav ul li:not(:last-child) {
+    margin-right: 0; } }
+@media only screen and (max-width: 768px) {
+  footer .footer_fluid > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; }
+
+  footer .footer_fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  #main_wrapper .home_contact_info_fluids {
+    align-items: flex-start;
+    flex-direction: column; }
+    #main_wrapper .home_contact_info_fluids > div {
+      margin-bottom: 5px;
+      margin-right: 0; }
+
+  .form_box > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px; }
+
+  .common_title {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    font-size: 26px; }
+
+  #main_wrapper .slider_fluid .home_info_slider {
+    width: 95%; }
+
+  .form_box {
+    flex-direction: column; }
+
+  .form_inputs form.question_form > div {
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+  .form_inputs form.question_form {
+    flex-wrap: wrap; }
+
+  .form_inputs form > div button {
+    font-size: 13px; }
+
+  #video_section {
+    padding: 10px 0; }
+
+  #video_section {
+    padding: 10px 0; }
+
+  .video_decor img {
+    width: 50px; }
+
+  #question {
+    padding: 0px 0 20px; } }
+@media only screen and (max-width: 576px) {
+  .info_tabs_fluid .info_tabs_box {
+    flex-wrap: wrap;
+    padding: 0px 10px; }
+
+  .info_tabs_fluid .info_tabs_box .info_tab a h3 {
+    font-size: 16px; }
+
+  .rooms_fluid .rooms_box_wrapper .rooms_box {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 15px; }
+
+  .info_tabs_fluid .info_tabs_box .info_tab {
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin-bottom: 30px; }
+
+  footer .footer_fluid > div {
+    flex: 0 0 100%;
+    max-width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
