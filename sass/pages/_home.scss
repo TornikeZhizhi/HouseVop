@@ -1,9 +1,27 @@
 
 .resp_hum {
 	display: none;
+	height: 30px;
 
 	img {
 		width: 25px;
+		margin-left: auto;
+	}
+	img:last-child {
+
+			display: none;
+		}
+
+	&.active {
+
+		img:first-child{
+			display:none;
+		}
+
+		img:last-child {
+
+			display: block;
+		}
 	}
 }
 .common_width {

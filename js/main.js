@@ -14,9 +14,8 @@ $('.home_info_slider').slick({
 });
 
 $(".resp_hum").click(function(){
-
-
-	$("#header .header_fluid nav ul").slideToggle()
+	$("#header .header_fluid nav ul").slideToggle();
+	$(this).toggleClass("active")
 })
 
 

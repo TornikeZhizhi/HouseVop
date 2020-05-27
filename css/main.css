@@ -136,9 +136,17 @@ footer {
       height: 17px; }
 
 .resp_hum {
-  display: none; }
+  display: none;
+  height: 30px; }
   .resp_hum img {
-    width: 25px; }
+    width: 25px;
+    margin-left: auto; }
+  .resp_hum img:last-child {
+    display: none; }
+  .resp_hum.active img:first-child {
+    display: none; }
+  .resp_hum.active img:last-child {
+    display: block; }
 
 .common_width {
   max-width: 1100px;
